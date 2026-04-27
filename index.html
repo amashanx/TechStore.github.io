@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone | Premium Gadget Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Settings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            /* Modern Gradient Background */
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 8%;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+
+        .logo span {
+            color: #00d2ff;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #ddd;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #00d2ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #00d2ff, #3a7bd5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .promo-badge {
+            background: #ff416c;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            margin-bottom: 15px;
+        }
+
+        /* Container & Grid */
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            margin: 40px 0 25px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #3a7bd5;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* Glassmorphism Card Style */
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            transition: 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #00d2ff;
+            margin: 10px 0;
+        }
+
+        .availability {
+            font-size: 0.8rem;
+            color: #00ff88;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px;
+            margin-top: 50px;
+            background: rgba(0,0,0,0.2);
+            font-size: 0.8rem;
+        }
+
+        /* New Arrival Tag */
+        .new-tag {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #ff9a00;
+            color: #000;
+            padding: 2px 10px;
+            border-radius: 5px;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Tech<span>Zone</span></div>
+        <ul class="nav-links">
+            <li><a href="#smartphones">Phones</a></li>
+            <li><a href="#laptops">Laptops</a></li>
+            <li><a href="#gaming">Gaming</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <span class="promo-badge">Summer Sale - 20% OFF</span>
+        <h1>Evolution of Technology</h1>
+        <p>Grab the latest gadgets at TechZone today!</p>
+    </div>
+
+    <div class="container">
+        
+        <section id="smartphones">
+            <h2 class="section-title">Smartphones</h2>
+            <div class="product-grid">
+                <div class="card">
+                    <span class="new-tag">New</span>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg3sIZoD72oRYK2lTv9MXHWJ2mADhcJXsRAg&s" alt="iPhone">
+                    <h3>iPhone 15 Pro</h3>
+                    <p>A17 Pro chip with aerospace-grade titanium design.</p>
+                    <p class="price">Rs.299,999.00</p>
+                    <p class="availability">In Stock</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=400" alt="Samsung">
+                    <h3>Samsung S24 Ultra</h3>
+                    <p>Experience the power of Galaxy AI and 200MP camera.</p>
+                    <p class="price">Rs.359,999.00</p>
+                    <p class="availability">In Stock</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400" alt="Pixel">
+                    <h3>Google Pixel 8</h3>
+                    <p>The most helpful Pixel yet, with a fully upgraded camera.</p>
+                    <p class="price">Rs.209,999.00</p>
+                    <p class="availability">Out of Stock</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="laptops">
+            <h2 class="section-title">Laptops</h2>
+            <div class="product-grid">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400" alt="Macbook">
+                    <h3>MacBook Air M3</h3>
+                    <p>Supercharged by M3 chip. Thin, light, and powerful.</p>
+                    <p class="price">Rs.300,000.00</p>
+                    <p class="availability">In Stock</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=400" alt="Dell">
+                    <h3>Dell XPS 13</h3>
+                    <p>Stunning InfinityEdge display and high performance.</p>
+                    <p class="price">Rs.245,000.00</p>
+                    <p class="availability">In Stock</p>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFVO6AsPvy9u-9zqnPRARMG9m_SI4yUT2lAQ&s" alt="Gaming Laptop">
+                    <h3>ROG Zephyrus G14</h3>
+                    <p>World's most powerful 14-inch gaming laptop.</p>
+                    <p class="price">Rs.450,000.00</p>
+                    <p class="availability">Limited Stock</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gaming">
+            <h2 class="section-title">Gaming Accessories</h2>
+            <div class="product-grid">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkGK_vQjG5zl6j5lu6a1mERIROwOJSjvwpLg&s" alt="Mouse">
+                    <h3>Logitech G Pro X</h3>
+                    <p>Wireless gaming mouse designed for pros.</p>
+                    <p class="price">Rs.39,999.00</p>
+                    <p class="availability">In Stock</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400" alt="Controller">
+                    <h3>PS5 DualSense</h3>
+                    <p>Immersive haptic feedback for a deeper experience.</p>
+                    <p class="price">Rs.20,700.00</p>
+                    <p class="availability">In Stock</p>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTKXamObVgtwP_rvnMI1cYvpGHDvZ32mOt_yFGqSbpBw&s" alt="Keyboard">
+                    <h3>Razer BlackWidow</h3>
+                    <p>Mechanical gaming keyboard with RGB lighting.</p>
+                    <p class="price">Rs.48,000.00</p>
+                    <p class="availability">In Stock</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 TechZone Gadget Store. Designed by Maleesha Amashan</p>
+        
+    </footer>
+
+</body>
+</html>
